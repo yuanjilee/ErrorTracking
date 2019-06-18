@@ -1,0 +1,11 @@
+framework module ErrorTracking {
+  umbrella header "ErrorTracking.h"
+
+  export *
+  module * { export * }
+}
+
+module ErrorTracking.Swift {
+    header "ErrorTracking-Swift.h"
+    requires objc
+}
