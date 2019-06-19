@@ -1,6 +1,6 @@
 //
 //  WTTableViewController.m
-//  Catchfly_Example
+//  ErrorTracking_Example
 //
 //  Created by 安笑 on 2019/3/28.
 //  Copyright © 2019 YC Tech. All rights reserved.
@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Catchfly";
+    self.title = @"ErrorTracking";
 }
 
 #pragma mark - Table view data source

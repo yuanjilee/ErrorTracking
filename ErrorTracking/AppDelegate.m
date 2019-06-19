@@ -24,7 +24,7 @@
     ErrorTrackingConfig *config = [[ErrorTrackingConfig alloc]init];
     config.logLevel = WTLogLevelWarn;
     config.trackStep = YES;
-    [ErrorTracking installWithAppID:@"32bd46b144112c794fd7fde4b27783495a0da3ab" config:config];
+    [ErrorTracking installWithAppID:@"555adcbfdbb9784b1083559dfc44ee8e848aea8d" config:config];
     WTLOG_VERBOSE(@"💜");
     WTLOG_DEBUG(@"💚");
     WTLOG_INFO(@"💙");

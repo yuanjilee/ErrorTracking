@@ -1,6 +1,6 @@
 //
 //  WTCrashCase.h
-//  Catchfly_Example
+//  ErrorTracking_Example
 //
 //  Created by 安笑 on 2019/3/28.
 //  Copyright © 2019 YC Tech. All rights reserved.
