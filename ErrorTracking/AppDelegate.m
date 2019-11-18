@@ -15,6 +15,8 @@
 
 @implementation AppDelegate
 
+#define appKey @"appKey"  // 通过 Worktile Trace 模块注册获取你的 key
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -23,8 +25,8 @@
 
     ErrorTrackingConfig *config = [[ErrorTrackingConfig alloc]init];
     config.logLevel = WTLogLevelWarn;
-    config.trackStep = YES;
-    [ErrorTracking installWithAppID:@"555adcbfdbb9784b1083559dfc44ee8e848aea8d" config:config];
+    config.trackStepEnable = YES;
+    [ErrorTracking installWithAppKey:appKey config:config];
     WTLOG_VERBOSE(@"💜");
     WTLOG_DEBUG(@"💚");
     WTLOG_INFO(@"💙");
@@ -33,7 +35,7 @@
 
 
     NSException *exception = [NSException exceptionWithName:@"testException2" reason:@"testReason2" userInfo:@{@"exceptionKey": @"exceptionValue"}];
-    [ErrorTracking reportException:exception fingerPrint:@"finger"];
+    [ErrorTracking reportException:exception fingerprint:@"finger"];
 
     return YES;
 }
